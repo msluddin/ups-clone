@@ -1,13 +1,12 @@
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './navigator/RootNavigator';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-red-500">
-        UPS Clone Open up App.js to start working on your app!
-      </Text>
+    <NavigationContainer>
+      <RootNavigator />
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
